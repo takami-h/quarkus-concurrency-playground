@@ -11,6 +11,7 @@ import io.quarkus.arc.Lock;
 public class Greeter {
   static final Logger LOGGER = Logger.getLogger(Greeter.class.getName());
 
+  // https://quarkus.io/guides/cdi-reference#container-managed-concurrency
   @Lock
   public String greetSerial() {
     return greet();

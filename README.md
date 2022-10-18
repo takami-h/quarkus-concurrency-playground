@@ -1,3 +1,14 @@
+https://quarkus.io/guides/cdi-reference#container-managed-concurrency
+
+```
+$ mvn compile quarkus:dev
+
+$ ab -n 8 -c 4 http://localhost:8080/greet/serial
+$ ab -n 8 -c 4 http://localhost:8080/greet/parallel
+```
+
+----
+
 # quarkus-concurrency-playground Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
